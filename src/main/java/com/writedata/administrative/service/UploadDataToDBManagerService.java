@@ -14,5 +14,5 @@ public interface UploadDataToDBManagerService {
      *
      * @return
      */
-    int uploadData();
+    String uploadData();
 }

@@ -29,9 +29,8 @@ public class AdministrativeController {
     @GetMapping("/writeToDB.json")
     @ResponseBody
     public String writeToDB() {
-        int result = uploadDataToDBManagerService.uploadData();
 
-        return "插入成功条数：" + result;
+        return uploadDataToDBManagerService.uploadData();
     }
 
     @GetMapping("/uploadFileToDB.json")
